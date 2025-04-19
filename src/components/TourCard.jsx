@@ -40,3 +40,4 @@ return (
 };
 
 export default TourCard;
+// Task 3 Render Tour Cards
