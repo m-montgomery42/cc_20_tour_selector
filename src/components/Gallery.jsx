@@ -78,3 +78,4 @@ const Gallery = ({tours, setTours, onRemove}) => {
 
 export default Gallery;
 // Task 1 Fetch and Store Tour Data
+// Task 4 Reset View
