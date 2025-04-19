@@ -77,4 +77,4 @@ const Gallery = ({tours, setTours, onRemove}) => {
 
 
 export default Gallery;
-// Loading and Error States completed during Gallery.jsx development... for commit
+// Task 1 Fetch and Store Tour Data
