@@ -1,0 +1,124 @@
+/* General styles for the webpage */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Layout for photos */
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.photo-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Tour details card */
+.tour-card {
+    background-color: #ffffff; /* White background */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    max-width: 1020px;
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tour-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tour-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #007bff; /* Blue color for titles */
+}
+
+.tour-card .tour-price {
+    font-size: 1.4rem;
+    color: #28a745; /* Green color for price */
+    margin-bottom: 10px;
+}
+
+.tour-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.tour-card button {
+    background-color: #007bff; /* Blue button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.tour-card button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Destination selector */
+.destination-selector {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.destination-selector label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: #333;
+}
+
+.destination-selector select {
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.destination-selector select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .photo-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tour-card {
+        width: 90%;
+    }
+}
